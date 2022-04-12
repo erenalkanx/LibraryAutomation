@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD39A599-0E8D-480D-B860-FB5CB4D2DBFA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>kutuphane</RootNamespace>
+    <AssemblyName>kutuphane</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AksesuarEklefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AksesuarEklefrm.Designer.cs">
+      <DependentUpon>AksesuarEklefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aksesuarlarfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aksesuarlarfrm.Designer.cs">
+      <DependentUpon>Aksesuarlarfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AksesuarSatinAlfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AksesuarSatinAlfrm.Designer.cs">
+      <DependentUpon>AksesuarSatinAlfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BugunKitapGetirenlerfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BugunKitapGetirenlerfrm.Designer.cs">
+      <DependentUpon>BugunKitapGetirenlerfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Carilerfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carilerfrm.Designer.cs">
+      <DependentUpon>Carilerfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmanetKitapListelefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmanetKitapListelefrm.Designer.cs">
+      <DependentUpon>EmanetKitapListelefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmanetKitapVerfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmanetKitapVerfrm.Designer.cs">
+      <DependentUpon>EmanetKitapVerfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmanetKitapİadefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmanetKitapİadefrm.Designer.cs">
+      <DependentUpon>EmanetKitapİadefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafikfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafikfrm.Designer.cs">
+      <DependentUpon>Grafikfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkindafrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hakkindafrm.Designer.cs">
+      <DependentUpon>Hakkindafrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapAramafrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapAramafrm.Designer.cs">
+      <DependentUpon>KitapAramafrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapEklefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapEklefrm.Designer.cs">
+      <DependentUpon>KitapEklefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapListelefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapListelefrm.Designer.cs">
+      <DependentUpon>KitapListelefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maliyetlerfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maliyetlerfrm.Designer.cs">
+      <DependentUpon>Maliyetlerfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Satislarfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satislarfrm.Designer.cs">
+      <DependentUpon>Satislarfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Siparislerfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siparislerfrm.Designer.cs">
+      <DependentUpon>Siparislerfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subelerfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subelerfrm.Designer.cs">
+      <DependentUpon>Subelerfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sıralamafrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sıralamafrm.Designer.cs">
+      <DependentUpon>Sıralamafrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UyeEklefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeEklefrm.Designer.cs">
+      <DependentUpon>UyeEklefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UyeListelemefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeListelemefrm.Designer.cs">
+      <DependentUpon>UyeListelemefrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AksesuarEklefrm.resx">
+      <DependentUpon>AksesuarEklefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aksesuarlarfrm.resx">
+      <DependentUpon>Aksesuarlarfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AksesuarSatinAlfrm.resx">
+      <DependentUpon>AksesuarSatinAlfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BugunKitapGetirenlerfrm.resx">
+      <DependentUpon>BugunKitapGetirenlerfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carilerfrm.resx">
+      <DependentUpon>Carilerfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmanetKitapListelefrm.resx">
+      <DependentUpon>EmanetKitapListelefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmanetKitapVerfrm.resx">
+      <DependentUpon>EmanetKitapVerfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmanetKitapİadefrm.resx">
+      <DependentUpon>EmanetKitapİadefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafikfrm.resx">
+      <DependentUpon>Grafikfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hakkindafrm.resx">
+      <DependentUpon>Hakkindafrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapAramafrm.resx">
+      <DependentUpon>KitapAramafrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapEklefrm.resx">
+      <DependentUpon>KitapEklefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapListelefrm.resx">
+      <DependentUpon>KitapListelefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maliyetlerfrm.resx">
+      <DependentUpon>Maliyetlerfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Satislarfrm.resx">
+      <DependentUpon>Satislarfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Siparislerfrm.resx">
+      <DependentUpon>Siparislerfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subelerfrm.resx">
+      <DependentUpon>Subelerfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sıralamafrm.resx">
+      <DependentUpon>Sıralamafrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UyeEklefrm.resx">
+      <DependentUpon>UyeEklefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UyeListelemefrm.resx">
+      <DependentUpon>UyeListelemefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\1.png" />
+    <Content Include="img\background.jpg" />
+    <Content Include="img\background2.jpg" />
+    <Content Include="img\background3.jpg" />
+    <Content Include="img\book-check-outline.png" />
+    <Content Include="img\book-cross.png" />
+    <Content Include="img\book-plus.png" />
+    <Content Include="img\cash-minus.png" />
+    <Content Include="img\cash-plus.png" />
+    <Content Include="img\outline_attach_money_black_24dp.png" />
+    <Content Include="img\outline_book_black_24dp.png" />
+    <Content Include="img\outline_calculate_black_24dp.png" />
+    <Content Include="img\outline_card_giftcard_black_24dp.png" />
+    <Content Include="img\outline_close_black_24dp.png" />
+    <Content Include="img\outline_close_white_24dp.png" />
+    <Content Include="img\outline_code_black_24dp.png" />
+    <Content Include="img\outline_collections_bookmark_black_24dp.png" />
+    <Content Include="img\outline_filter_list_black_24dp.png" />
+    <Content Include="img\outline_foundation_black_24dp.png" />
+    <Content Include="img\outline_fullscreen_black_24dp.png" />
+    <Content Include="img\outline_fullscreen_white_24dp.png" />
+    <Content Include="img\outline_groups_black_24dp.png" />
+    <Content Include="img\outline_leaderboard_black_24dp.png" />
+    <Content Include="img\outline_menu_book_black_24dp.png" />
+    <Content Include="img\outline_minimize_white_24dp.png" />
+    <Content Include="img\outline_money_off_black_24dp.png" />
+    <Content Include="img\outline_notifications_active_black_24dp.png" />
+    <Content Include="img\outline_people_black_24dp.png" />
+    <Content Include="img\outline_person_add_black_24dp.png" />
+    <Content Include="img\outline_person_search_black_24dp.png" />
+    <Content Include="img\outline_point_of_sale_black_24dp.png" />
+    <Content Include="img\outline_shopping_basket_black_24dp.png" />
+    <Content Include="img\outline_shopping_cart_black_24dp.png" />
+    <Content Include="img\outline_shop_black_24dp.png" />
+    <Content Include="img\outline_storefront_black_24dp.png" />
+    <Content Include="img\outline_trending_up_black_24dp.png" />
+    <Content Include="img\outline_volunteer_activism_black_24dp.png" />
+    <Content Include="img\TOGU%28yuvarlak%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
